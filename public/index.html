@@ -1,17 +1,15 @@
-<h2>Today’s Appointments</h2>
-<ul id="todayList"></ul>
-<hr>
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>WhatsApp SaaS — Client Manager</title>
+    <title>Daylio</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <main>
-      <h1>Client Manager</h1>
+      <h1>Daylio</h1>
+      <p style="text-align:center;">Client &amp; Appointment Manager</p>
 
       <form id="clientForm">
         <input id="name" placeholder="Client name" required />
@@ -27,10 +25,10 @@
       <section>
         <h2>Appointments</h2>
 
-        <input id="client_name" placeholder="Client name">
+        <select id="appointment_client"></select>
         <input id="date" type="date">
         <input id="time" type="time">
-        <button onclick="addAppointment()">Add Appointment</button>
+        <button type="button" id="addAppointmentBtn">Add Appointment</button>
 
         <h3>Today</h3>
         <ul id="todayList"></ul>
